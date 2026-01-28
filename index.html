@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCMatch - Find Your Perfect Investor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #1e1e30 0%, #252540 100%);
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-950/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">VCMatch</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#investors" class="text-gray-300 hover:text-white transition">Investors</a>
+                    <a href="#how-it-works" class="text-gray-300 hover:text-white transition">How It Works</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">Blog</a>
+                    <a href="#" class="px-4 py-2 rounded-lg accent-gradient text-white font-medium hover:opacity-90 transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+                    Find Your <span class="gradient-text">Perfect Investor</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Upload your pitch deck and get instantly matched with investors who are actively looking for companies like yours.
+                </p>
+
+                <!-- Stats -->
+                <div class="flex flex-wrap justify-center gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold gradient-text">2,200+</div>
+                        <div class="text-gray-400">VCs Indexed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold gradient-text">850+</div>
+                        <div class="text-gray-400">Successful Matches</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold gradient-text">$2.3B+</div>
+                        <div class="text-gray-400">Raised</div>
+                    </div>
+                </div>
+
+                <!-- Upload CTA -->
+                <div class="card-gradient rounded-2xl p-8 max-w-lg mx-auto border border-gray-700">
+                    <div class="border-2 border-dashed border-gray-600 rounded-xl p-8 hover:border-purple-500 transition cursor-pointer">
+                        <svg class="w-12 h-12 mx-auto mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        </svg>
+                        <p class="text-lg font-medium mb-2">Upload Your Pitch Deck</p>
+                        <p class="text-gray-400 text-sm">Supports PDF files up to 25MB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Value Section -->
+    <section class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Fundraising Shouldn't Feel Like a Lottery
+                </h2>
+                <p class="text-xl text-gray-300">
+                    Most founder-VC conversations go nowhere—not because either side is wrong, but because fit is hard to assess upfront. We fix that.
+                </p>
+            </div>
+
+            <!-- Pain Points -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="card-gradient rounded-xl p-6 border border-gray-700">
+                    <div class="text-4xl font-bold gradient-text mb-2">100:1</div>
+                    <p class="text-gray-300">Ratio of pitches to investments—most conversations aren't a fit from the start</p>
+                </div>
+                <div class="card-gradient rounded-xl p-6 border border-gray-700">
+                    <div class="text-4xl font-bold gradient-text mb-2">200 hrs</div>
+                    <p class="text-gray-300">Average time founders spend on unsuccessful fundraising efforts</p>
+                </div>
+                <div class="card-gradient rounded-xl p-6 border border-gray-700">
+                    <div class="text-4xl font-bold gradient-text mb-2">2%</div>
+                    <p class="text-gray-300">Success rate when pitching without knowing investor fit</p>
+                </div>
+            </div>
+
+            <!-- Reframed Message -->
+            <div class="text-center max-w-2xl mx-auto">
+                <blockquote class="text-xl italic text-gray-300 border-l-4 border-purple-500 pl-6">
+                    "Every pitch to a wrong-fit investor is time you could've spent building. We help you focus on the conversations that actually matter."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-24 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">How It Works</h2>
+                <p class="text-xl text-gray-400">Three steps to smarter fundraising</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full accent-gradient flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+                    <h3 class="text-2xl font-bold mb-4">Upload Your Deck</h3>
+                    <p class="text-gray-400">Drop your pitch deck and our AI analyzes your company, market, and funding stage.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full accent-gradient flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+                    <h3 class="text-2xl font-bold mb-4">Get Matched</h3>
+                    <p class="text-gray-400">We match you with VCs based on investment thesis, stage focus, and portfolio fit.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full accent-gradient flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+                    <h3 class="text-2xl font-bold mb-4">Connect</h3>
+                    <p class="text-gray-400">Get detailed profiles, warm intro paths, and contact info for your top matches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="about" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">What We Believe</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-gradient rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Entrepreneurs Move the World Forward</h3>
+                    <p class="text-gray-300">The people who build things, who take risks, who bet their lives on a vision—they deserve tools that match their ambition.</p>
+                </div>
+                <div class="card-gradient rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Better Tools, Better Outcomes</h3>
+                    <p class="text-gray-300">VCs have PitchBook, Crunchbase, and research teams. Now founders have intelligence tools of their own.</p>
+                </div>
+                <div class="card-gradient rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Time Is Your Runway</h3>
+                    <p class="text-gray-300">You can't buy back months spent on wrong-fit conversations. Every hour saved is an hour back to building.</p>
+                </div>
+                <div class="card-gradient rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Merit Should Matter</h3>
+                    <p class="text-gray-300">Great companies can come from anywhere. Warm intros shouldn't be the only path to a real conversation.</p>
+                </div>
+                <div class="card-gradient rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Good Matches Help Everyone</h3>
+                    <p class="text-gray-300">VCs want to find great companies. Founders want to find the right partners. Better matching serves both sides.</p>
+                </div>
+                <div class="card-gradient rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-4 gradient-text">When Founders Win, We All Win</h3>
+                    <p class="text-gray-300">Jobs are created. Industries are transformed. Lives are improved. Your success ripples outward.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Built This -->
+    <section class="py-24 bg-gray-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Why We Built This</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                We watched too many talented founders spend months pitching investors who were never going to be a fit—wrong stage, wrong sector, portfolio conflicts, no dry powder.
+            </p>
+            <p class="text-xl text-gray-300 mb-8">
+                This isn't just a matching platform. It's putting the same intelligence VCs use into founders' hands. It's making fundraising a strategy instead of a numbers game.
+            </p>
+            <div class="accent-gradient rounded-xl p-8 text-left">
+                <h3 class="text-2xl font-bold mb-4">Our Commitment</h3>
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        We will never sell your data
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        We build for founders first
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        We continuously work to level the playing field
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Directory Preview -->
+    <section id="investors" class="py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Investor Directory</h2>
+                <p class="text-xl text-gray-400">Browse 2,200+ indexed VCs by stage and sector</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-gradient rounded-xl p-6 border border-gray-700">
+                    <h3 class="font-bold mb-4 text-purple-400">By Stage</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Pre-Seed</li>
+                        <li>Seed</li>
+                        <li>Series A</li>
+                        <li>Series B</li>
+                        <li>Series C+</li>
+                    </ul>
+                </div>
+                <div class="card-gradient rounded-xl p-6 border border-gray-700">
+                    <h3 class="font-bold mb-4 text-purple-400">AI & Tech</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>AI/ML</li>
+                        <li>Enterprise SaaS</li>
+                        <li>Developer Tools</li>
+                        <li>Data Infrastructure</li>
+                        <li>Cybersecurity</li>
+                    </ul>
+                </div>
+                <div class="card-gradient rounded-xl p-6 border border-gray-700">
+                    <h3 class="font-bold mb-4 text-purple-400">Fintech & Health</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Fintech</li>
+                        <li>Healthtech</li>
+                        <li>Biotech</li>
+                        <li>Payments</li>
+                        <li>Digital Health</li>
+                    </ul>
+                </div>
+                <div class="card-gradient rounded-xl p-6 border border-gray-700">
+                    <h3 class="font-bold mb-4 text-purple-400">Consumer & Climate</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Consumer</li>
+                        <li>E-Commerce</li>
+                        <li>Climate/Cleantech</li>
+                        <li>D2C Brands</li>
+                        <li>Marketplace</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-gray-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Fundraise Smarter?</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Stop guessing which investors might be interested. Start with the ones who are actually a fit.
+            </p>
+            <a href="#" class="inline-block px-8 py-4 rounded-lg accent-gradient text-white text-lg font-semibold hover:opacity-90 transition">
+                Upload Your Deck
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-2xl font-bold gradient-text">VCMatch</span>
+                    <p class="text-gray-400 mt-4">AI-powered fundraising intelligence that matches startups with the right investors.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Upload Deck</a></li>
+                        <li><a href="#" class="hover:text-white transition">Investor Directory</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pitch Decks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Our Manifesto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 VCMatch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
